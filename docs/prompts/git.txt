@@ -1,0 +1,9 @@
+提交信息遵循“约定式提交”（Conventional Commits）格式，示例：
+commit xxx
+    refactor(paper): \clearpage 分节，表格 caption 统一移至表前，\noindent 修复，fix_patch 全面重构
+    
+    - prob1.tex / prob2.tex: 每个 \section 前加 \clearpage 分页；caption 从表尾移回表前（\centering 之后）；符号表改为 [H] 浮动并用 \captionsetup{labelformat=empty} 隐藏标签；BSTS 方程前加 \noindent；Inv-Gamma 添加 \allowbreak
+    - _fix_patch.py: 从旧版脚本重构为 move_caption_above_tabular + add_clearpage_before_section 两个核心函数
+    - 新增 _fix_textbf_noindent.py、_verify_changes.py
+    
+详略程度应和示例相当。

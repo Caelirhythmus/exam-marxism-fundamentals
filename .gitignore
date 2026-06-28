@@ -1,0 +1,19 @@
+*.pdf
+
+# 排除 args.txt 和 warnings.txt
+args.txt
+warnings.txt
+
+# 排除用户配置
+.codewhale/
+.deepseek/
+
+# 排除源代码缺失的既编译文件
+exam.pdf
+solution.pdf
+# Generated Anki TSV (regenerate from cards/)
+anki-cards.tsv
+
+personal/
+
+prob-and-sol.txt
