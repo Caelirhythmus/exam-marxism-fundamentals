@@ -191,9 +191,9 @@ def build_anki_front(qnum, qtype, stem, options):
 def build_anki_back(correct):
     """构建 Anki 背面字段。
 
-    格式：正确答案:X
+    只输出答案字母，不加前缀，避免每次输入多打字。
     """
-    return f"正确答案:{correct}"
+    return correct
 
 
 def process_source(source_path):
